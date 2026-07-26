@@ -19,23 +19,17 @@ export class AuthGuard {
     const currentUser = this.store.get('currentUser') as { roles?: { name: string }[] } | null;
     if (currentUser) {
       const userRole = currentUser.roles?.[0]?.name; // Optional chaining to safely access the role
-      // If no role exists, you might want to handle it (e.g., redirect or show an error)
-      if (!userRole) {
-        this.router.navigate(['/authentication/signin']);
-        return false;
-      }
 
       // Check if the route requires a specific role and if the user's role matches
-      if (route.data['role'] && route.data['role'].indexOf(userRole) === -1) {
+      if (userRole && route.data['role'] && route.data['role'].indexOf(userRole) === -1) {
         // If the role does not match, navigate to the signin page
         this.router.navigate(['/authentication/signin']);
         return false;
       }
-      return true;
     }
 
-    // If no current user is found, redirect to signin
-    this.router.navigate(['/authentication/signin']);
-    return false;
+    // Authentication is bypassed: allow access even without a signed-in user
+    // so the app lands directly on /admin/dashboard/main.
+    return true;
   }
 }
