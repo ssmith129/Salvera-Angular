@@ -683,11 +683,15 @@ Serve `dist/cliniva/browser` over HTTPS in production. The service worker requir
 
 ### Environments and pipeline
 
-<!-- [DATA NEEDED]: the repository contains no CI workflow, no Dockerfile, and no host configuration (no vercel.json, netlify.toml, or equivalent). Git history references resolving Vercel dependency conflicts, which suggests Vercel, but nothing in the tree confirms a target. Document the actual environments, their URLs, and the deploy pipeline. -->
+Hosting is **Vercel**. A Vercel project named `cliniva-angular` is connected to this repository via the Vercel GitHub integration and builds a deployment for every pull request. Preview deployments are gated behind Vercel SSO — an unauthenticated request returns a `302` to `vercel.com/sso-api`, so previews are visible only to members of the Vercel team.
 
-The only deployment-relevant setting committed to the repo is `.npmrc` (`legacy-peer-deps=true`), which a hosted build step needs in order to install successfully.
+There is no GitHub Actions workflow, no Dockerfile, and **no `vercel.json`**. Build settings — framework preset, build command, and output directory — live in the Vercel project settings rather than in version control, so they are not reviewable or reproducible from this repo. The project root is the repository root.
 
-There are no per-environment configuration values: the app reads no environment variables, and the `src/environments/` files are unreferenced.
+<!-- [DATA NEEDED]: the production URL, the full list of environments, and the Vercel build command / output directory settings are configured in the Vercel dashboard and cannot be read from the repository. Record them here, and consider committing a vercel.json so the build configuration is version-controlled. -->
+
+The only deployment-relevant setting committed to the repo is `.npmrc` (`legacy-peer-deps=true`), which the hosted build step needs in order to install successfully. Removing it will break deploys, not just local installs.
+
+There are no per-environment configuration values to set in the host: the app reads no environment variables, and the `src/environments/` files are unreferenced.
 
 ## Troubleshooting
 
