@@ -6,12 +6,14 @@ import { Page404Component } from './authentication/page404/page404.component';
 import { Role } from '@core';
 
 export const APP_ROUTE: Route[] = [
+  // Default landing page: send the bare root straight to sign in, before the
+  // guarded main layout is instantiated.
+  { path: '', redirectTo: '/authentication/signin', pathMatch: 'full' },
   {
     path: '',
     component: MainLayoutComponent,
     canActivate: [AuthGuard],
     children: [
-      { path: '', redirectTo: '/authentication/signin', pathMatch: 'full' },
       {
         path: 'admin',
         canActivate: [AuthGuard],
