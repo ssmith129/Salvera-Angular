@@ -177,8 +177,8 @@ Layer responsibilities:
 ### Install
 
 ```bash
-git clone https://github.com/ssmith129/Cliniva-Angular.git
-cd Cliniva-Angular
+git clone https://github.com/ssmith129/Cliniva-Angular_v1.3.git
+cd Cliniva-Angular_v1.3
 npm install
 ```
 
@@ -395,8 +395,8 @@ Breakpoints are hardcoded media queries in `src/assets/scss/common/_media.scss`,
 1. Clone and install:
 
    ```bash
-   git clone https://github.com/ssmith129/Cliniva-Angular.git
-   cd Cliniva-Angular
+   git clone https://github.com/ssmith129/Cliniva-Angular_v1.3.git
+   cd Cliniva-Angular_v1.3
    npm install
    ```
 
@@ -761,7 +761,7 @@ Review checklist:
 
 | Resource | Link |
 |---|---|
-| Repository | https://github.com/ssmith129/Cliniva-Angular |
+| Repository | https://github.com/ssmith129/Cliniva-Angular_v1.3 |
 | Shared table documentation | [`src/app/shared/components/master-table/README.md`](src/app/shared/components/master-table/README.md) |
 
 <!-- [DATA NEEDED]: no deployed environment URLs, design files (Figma or otherwise), issue tracker, or supplementary documentation are referenced anywhere in the repository. -->
