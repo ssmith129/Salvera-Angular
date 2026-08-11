@@ -226,7 +226,7 @@ export class AiPlannerDialogComponent implements OnInit {
       calories: ['']
     });
 
-    const savedPlan = localStorage.getItem('cliniva_ai_diet_plan');
+    const savedPlan = localStorage.getItem('salvera_ai_diet_plan');
     if (savedPlan) {
       try {
         this.planResult.set(JSON.parse(savedPlan));
@@ -299,7 +299,7 @@ No other text or markup. Return raw JSON.`;
               groceryList: ['Oatmeal', 'Walnuts', 'Mixed Berries', 'Avocado', 'Pumpkin Seeds', 'Sweet Potatoes', 'Asparagus', 'Almonds', 'Organic Green Tea']
             };
             this.planResult.set(mockData);
-            localStorage.setItem('cliniva_ai_diet_plan', JSON.stringify(mockData));
+            localStorage.setItem('salvera_ai_diet_plan', JSON.stringify(mockData));
             this.snackBar.open('Diet & Habits plan generated (Demo Mode)!', 'Close', { duration: 3000 });
             return;
           }
@@ -307,7 +307,7 @@ No other text or markup. Return raw JSON.`;
           const cleanJson = res.replace(/```json/g, '').replace(/```/g, '').trim();
           const parsed = JSON.parse(cleanJson);
           this.planResult.set(parsed);
-          localStorage.setItem('cliniva_ai_diet_plan', JSON.stringify(parsed));
+          localStorage.setItem('salvera_ai_diet_plan', JSON.stringify(parsed));
           this.snackBar.open('AI Diet & Habits Plan completed successfully!', 'Close', { duration: 3000, panelClass: 'snackbar-success' });
         } catch (_e) {
           this.snackBar.open('AI parsing error. Please try generating again.', 'Close', { duration: 3000 });
