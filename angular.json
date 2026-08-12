@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cliniva": {
+    "salvera": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -18,7 +18,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": {
-              "base": "dist/cliniva"
+              "base": "dist/salvera"
             },
             "index": "src/index.html",
             "polyfills": ["@angular/localize/init"],
@@ -93,10 +93,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "cliniva:build:production"
+              "buildTarget": "salvera:build:production"
             },
             "development": {
-              "buildTarget": "cliniva:build:development"
+              "buildTarget": "salvera:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,7 +104,7 @@
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n",
           "options": {
-            "buildTarget": "cliniva:build"
+            "buildTarget": "salvera:build"
           }
         },
         "test": {

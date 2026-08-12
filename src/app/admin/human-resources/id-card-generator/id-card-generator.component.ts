@@ -25,13 +25,13 @@ import { CommonModule } from '@angular/common';
 export class IdCardGeneratorComponent implements OnInit {
   idCardForm!: FormGroup;
   photoUrl: string | ArrayBuffer | null = 'assets/images/user/user1.jpg';
-  logoUrl: string | ArrayBuffer | null = 'assets/images/logo.png';
+  logoUrl: string | ArrayBuffer | null = 'assets/images/logo-salvera.png';
 
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {
     this.idCardForm = this.fb.group({
-      hospitalName: ['Cliniva Hospital'],
+      hospitalName: ['Salvera Hospital'],
       hospitalTagline: ['Healing Hands, Caring Hearts'],
       personName: ['Dr. John Doe'],
       idNumber: ['EMP-2023-001'],

@@ -296,20 +296,27 @@
   border-radius: 3px;
 }
 .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   float: left;
   height: 45px;
-  padding: 6px 25px;
+  padding: 0 25px;
   font-size: 18px;
   line-height: 20px;
   text-align: center;
   width: 100%;
   img {
-    /*float: left;*/
-    vertical-align: top;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    object-fit: contain;
   }
   span {
-    line-height: 32px;
+    line-height: 1.2;
     padding-left: 10px;
+    min-width: 0;
+    @include mix.three-dots-overflow();
   }
 }
 .navbar-collapse {

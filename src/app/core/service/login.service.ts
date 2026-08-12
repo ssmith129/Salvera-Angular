@@ -16,7 +16,7 @@ export class LoginService {
   private users: User[] = [
     {
       id: 1,
-      username: 'clinivaAdmin',
+      username: 'salveraAdmin',
       password: 'admin@123',
       name: 'Sarah Smith',
       email: 'admin@hospital.org',

@@ -31,7 +31,7 @@ interface GeminiResponse {
   providedIn: 'root',
 })
 export class AiService {
-  private readonly STORAGE_KEY = 'cliniva_ai_config';
+  private readonly STORAGE_KEY = 'salvera_ai_config';
 
   constructor(private http: HttpClient) {}
 
