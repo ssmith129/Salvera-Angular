@@ -54,7 +54,7 @@ export class AiChatAssistantComponent {
   isTyping = false;
   
   messages: Message[] = [
-    { text: 'Hello! I am your Cliniva AI Assistant. How can I help you today?', sender: 'ai', time: new Date() }
+    { text: 'Hello! I am your Salvera AI Assistant. How can I help you today?', sender: 'ai', time: new Date() }
   ];
 
   toggleChat() {

@@ -1,6 +1,6 @@
 {
-  "name": "cliniva",
-  "short_name": "cliniva",
+  "name": "salvera",
+  "short_name": "salvera",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

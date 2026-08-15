@@ -31,7 +31,7 @@ export class IdCardGeneratorComponent implements OnInit {
 
   ngOnInit(): void {
     this.idCardForm = this.fb.group({
-      hospitalName: ['Cliniva Hospital'],
+      hospitalName: ['Salvera Hospital'],
       hospitalTagline: ['Healing Hands, Caring Hearts'],
       personName: ['Dr. John Doe'],
       idNumber: ['EMP-2023-001'],

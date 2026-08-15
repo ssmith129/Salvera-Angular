@@ -52,7 +52,7 @@ export class KnowledgeBaseComponent {
     {
       id: '1',
       category: 'Getting Started',
-      title: 'How to register a new doctor in Cliniva',
+      title: 'How to register a new doctor in Salvera',
       summary: 'Learn the step-by-step process of adding a new doctor to the staff roster and configuring their department assignments.',
       content: 'To register a new doctor, navigate to the Doctors section in the sidebar and click on "Add Doctor". Fill in their first name, last name, and credentials. Ensure you select the correct primary department. You can configure their shift schedule under the "Shift Management" page. The doctor will receive an automated invitation email to set up their password.',
       views: 342
@@ -62,7 +62,7 @@ export class KnowledgeBaseComponent {
       category: 'Patient Care',
       title: 'Scheduling virtual telemedicine calls',
       summary: 'Guides on how to launch the video call interface and invite patients to virtual consultations.',
-      content: 'Cliniva includes an integrated Telemedicine consultation room. To book a virtual visit, go to Appointments, choose Book Appointment, and set the Visit Type to "Telemedicine". The patient will receive a link to join the waiting room via email/SMS. Five minutes before the session, the doctor can click "Join Call" from their dashboard to open the full-screen interactive WebRTC interface.',
+      content: 'Salvera includes an integrated Telemedicine consultation room. To book a virtual visit, go to Appointments, choose Book Appointment, and set the Visit Type to "Telemedicine". The patient will receive a link to join the waiting room via email/SMS. Five minutes before the session, the doctor can click "Join Call" from their dashboard to open the full-screen interactive WebRTC interface.',
       views: 521
     },
     {
@@ -94,7 +94,7 @@ export class KnowledgeBaseComponent {
       category: 'Patient Care',
       title: 'Understanding the Triage queue system (ESI)',
       summary: 'How emergency room patient charts are color-coded based on ESI levels.',
-      content: 'Cliniva uses the Emergency Severity Index (ESI) scoring system to prioritize ER patients. When completing the Triage form, assign a score from 1 (Most Critical) to 5 (Non-urgent). The Triage Queue board automatically places critical patients at the top of the queue and updates their card colors. Staff can assign available ER beds via drag-and-drop actions.',
+      content: 'Salvera uses the Emergency Severity Index (ESI) scoring system to prioritize ER patients. When completing the Triage form, assign a score from 1 (Most Critical) to 5 (Non-urgent). The Triage Queue board automatically places critical patients at the top of the queue and updates their card colors. Staff can assign available ER beds via drag-and-drop actions.',
       views: 298
     }
   ];
